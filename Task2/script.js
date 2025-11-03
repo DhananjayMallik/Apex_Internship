@@ -4,20 +4,24 @@ const toastRef = document.getElementById("toast");
 const form = document.getElementById("form");
 
 
+// add event listener from my form element 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const password = document.getElementById("password").value.trim();
+  const name = document.getElementById("name").value.trim(); // get reference from my name part
+  const email = document.getElementById("email").value.trim();// get reference from my email part
+  const phone = document.getElementById("phone").value.trim();// get reference from my phone part
+  const password = document.getElementById("password").value.trim();// get reference from my password part
 
+  // if not enter all the details
   if (!name || !email || !phone || !password) {
     alert("please fill all the details!!");
   }
+  // if email pattern not matched 
   const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if (!email.match(emailPattern)) {
     alert("please enter valid email format");
   }
+  // if matched all required details
   function showMessage() {
     toastRef.classList.add("show");
     setTimeout(() => {
