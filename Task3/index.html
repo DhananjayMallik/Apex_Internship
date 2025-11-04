@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Skills in CSS and Javascript | Apex Planet Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Apex Planet Internship - Task 3</h1>
+        <p>Advanced Skills in CSS and Javascript | Apex Planet Internship</p>
+    </header>
+    <!-- responsive design section -->
+     <section class="responsive-container">
+        <h2>Our Responsive Design</h2>
+        <div class="responsive-demo">
+            Resize Your Screen into different break point
+        </div>
+     </section>
+
+     <!-- carousel section -->
+      <section class="carousel-section">
+        <h2>Javascript Image Carousel - Task 3</h2>
+        <p>Build an image carousel that rotates images on user interaction.</p>
+        <!-- carousel container -->
+        <div class="carousel-container">
+            <!-- slide of each carousel -->
+            <div class="carousel-slide" id="carousel">
+                <!-- image putting -->
+                 <img src="https://picsum.photos/id/1018/900/450" alt="Image 1">
+                 <img src="https://picsum.photos/id/1021/900/450" alt="Image 2">
+                 <img src="https://picsum.photos/id/1039/900/450" alt="Image 3">
+                 <img src="https://picsum.photos/id/1045/900/450" alt="Image 4">
+            </div>
+            <!-- next and previous button -->
+           <button class="btn" id="prevBtn">&#10094;</button>
+           <button class="btn" id="nextBtn">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- Joke API section -->
+       <section class="api-section">
+        <h3>Fetch Joke Data From API Using Javascript</h3>
+        <p>Learn how to work with external APIs to fetch real-time data.</p>
+        <div class="api-fetch">
+            <button id="Api-btn">Get Joke</button>
+            <p id="jokeText" class="joke-box"></p>
+        </div>
+       </section>
+      <script src="script.js"></script>
+</body>
+</html>
