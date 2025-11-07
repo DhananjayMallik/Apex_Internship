@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* 🧠 To-Do Section */
+section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔹 Heading */
+h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* 🧾 Input + Button */
+#todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.3s;
+}
+
+#taskInput:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+#addTask {
+  width: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+#addTask:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #0099ff, #005eff);
+}
+
+/* 📝 Task List */
+#taskList {
+  list-style: none;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+}
+
+#taskList li {
+  background: rgba(255, 255, 255, 0.2);
+  color: #884545;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#taskList li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+/* ❌ Delete Button */
+#taskList li button {
+  background: #ff5252;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#taskList li button:hover {
+  background: #d50000;
+  transform: scale(1.1);
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  section {
+    max-width: 95%;
+    padding: 25px 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #taskInput {
+    font-size: 15px;
+  }
+
+  #addTask {
+    font-size: 15px;
+  }
+}
