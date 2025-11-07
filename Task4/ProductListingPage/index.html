@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page | Apex Planet Pvt Ltd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PRODUCT LISTING PAGE</h1>
+    </header>
+    <!-- filter section -->
+     
+     <section class="controls">
+        <div class="filter">
+            <label for="category">Filter By Category :</label>
+            <select  id="category">
+                <option value="All">All</option>
+                <option value="Electronics">Electronic Device</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Home">Home</option>
+                <option value="Skin Care">Skin Care</option>
+                <option value="Health">Health</option>
+            </select>
+        </div>
+        <!-- sorting section -->
+         <div class="sort">
+            <label for="sort">Sort By price :</label>
+            <select id="sort">
+                <option value="default">Default</option>
+                <option value="Low to High">Low To High</option>
+                <option value="High To Low">High To Low</option>
+            </select>
+         </div>
+     </section>
+    <!-- product list section -->
+     <section class="product-list" id="product-list">
+
+     </section>
+     <script src="script.js"></script>
+</body>
+</html>
