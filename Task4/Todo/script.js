@@ -38,7 +38,7 @@ function addTask(){
         alert("Please enter valid task");
         return;
     }
-    const tasks = JSON.parse(localStorage.getItem("Tasks")) || []; // retrieve from local storage
+    const tasks = JSON.parse(localStorage.getItem("Tasks")) || []; // retrieve existing todo task from local storage
     tasks.push(task);
     TaskInput.value = ""; // empty Task Input field
 
