@@ -9,7 +9,13 @@ const products = [
   { id: 7, name: "Face Wash", category: "Skin Care", price: 900, image: "image/face-wash.jpg" },
   { id: 8, name: "Vitamin-E", category: "Health", price: 2000, image: "image/vitamin-e.jpg" },
   { id: 9, name: "Vitamin-A", category: "Health", price: 20000, image: "image/vitamin-e.jpg" },
-  { id: 10, name: "Face Wash", category: "Skin Care", price: 19000, image: "image/face-wash.jpg" },
+  { id: 10, name: "Face Wash", category: "Skin Care", price: 1000, image: "image/face-wash.jpg" },
+  { id: 11, name: "Sun Screen Cream", category: "Skin Care", price: 190, image: "image/sunscreen.jpg" },
+  { id: 12, name: "refrigerator ", category: "Electronics", price: 29000, image: "image/refrigerator.jpg" },
+  { id: 13, name: "Vitamin -B Complex", category: "Health", price: 1500, image: "image/Vitamin -B Complex.jpeg" },
+  { id: 14, name: "Shokes", category: "Home", price: 10000, image: "image/shokes.jpeg" },
+  { id: 15, name: "Alna", category: "Home", price: 5000, image: "image/alna.jpg" },
+  { id: 16, name: "Hand Gloves", category: "Fashion", price: 500, image: "image/Hand Gloves.jpeg" },
 ]
 
 // get all the reference that are required during product listed
@@ -44,9 +50,9 @@ function applyFilters(){
         filteredProduct = filteredProduct.filter((p)=> p.category === category);
     }
     // check price range on every product
-    if(sort === 'Low to High'){
+    if(sort === 'Low To High'){
         filteredProduct.sort((a,b)=>a.price - b.price);
-    } else if(sort === 'High to Low'){
+    } else if(sort === 'High To Low'){
          filteredProduct.sort((a,b)=>b.price - a.price);
     }
       renderProducts(filteredProduct);

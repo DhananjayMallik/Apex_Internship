@@ -1,4 +1,5 @@
 
+// for menu icon toggle
 document.addEventListener("DOMContentLoaded", () => {
 
   console.log("DOM Loaded");

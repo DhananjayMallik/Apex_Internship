@@ -33,13 +33,14 @@ function renderTasks(){
 }
 // add functionality
 function addTask(){
+    // here we take a task 
     const task = TaskInput.value.trim();
     if(!task){
         alert("Please enter valid task");
         return;
     }
     const tasks = JSON.parse(localStorage.getItem("Tasks")) || []; // retrieve existing todo task from local storage
-    tasks.push(task);
+    tasks.push(task); // add new task 
     TaskInput.value = ""; // empty Task Input field
 
     localStorage.setItem("Tasks",JSON.stringify(tasks)); // save with my local storage
