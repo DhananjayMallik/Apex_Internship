@@ -64,3 +64,4 @@ productSort.addEventListener('change',applyFilters);
 
 // Initial rendering
 renderProducts(products);
+
